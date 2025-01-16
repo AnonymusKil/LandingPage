@@ -3,6 +3,38 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #f9f9f9;
+  color: #333;
+}
+h1{
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px rgba(0,0, 0, 0.2);
+}
+button{
+  background-color: #007bff;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ;
+  cursor: pointer;
+  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button:hover{
+  background-color: #0056b3;
+}
+section{
+  padding: 3rem 1rem;
+}
+p{
+  color: #6c757d;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+img{
+  width: 100%;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -11,6 +43,7 @@ header {
   padding: 1rem;
   flex-wrap: wrap;
   background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 header h1 {
   font-weight: bolder;
@@ -43,8 +76,19 @@ header h1 {
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-direction: column;
+}
+input{
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 0.8rem;
+  transition: border-color 0.3s;
+}
+input:focus{
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 /* input{
     padding: 10px 20px;
@@ -83,6 +127,43 @@ input {
     color: blue;
     font-size: 2.8rem;
 }
+.first-card-side, .first-card-side-1, .first-card-side-2{
+  display: none;
+
+}
+.poor{
+  display: none;
+}
+.Angeli{
+  text-align: center;
+  margin-top: 1rem;
+  /* padding: 1rem; */
+}
+.testimonial-flex img{
+  width: 250px;
+  border-radius: 50%;
+}
+.testimonial-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+ .contain-2{
+  text-align: center;
+  background-image: url(assets/img/bg-masthead.jpg);
+  background-size: cover;
+  background-position: center top;
+  margin-top: 1rem;
+  /* background-repeat: repeat; */
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ }
 @media (min-width: 1024px) {
   .mobile {
     display: none;
@@ -107,4 +188,23 @@ input {
   .other-flex{
     flex-direction: row;
   }
+  .first-card-side, .first-card-side-1, .first-card-side-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 10px;
+
+}
+.poor{
+  display: block;
+  /* padding: 1.5rem; */
+  margin: 1rem;
+}
+.testimonial-flex{
+  flex-direction: row;
+}
+/* .contain-2{
+  height: 60vh;
+} */
 }
