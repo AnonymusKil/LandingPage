@@ -21,7 +21,7 @@ header h1 {
   display: none;
 }
 .container {
-  background-image: url(/assets/img/bg-masthead.jpg);
+  background-image: url(assets/img/bg-masthead.jpg);
   background-size: cover;
   text-align: center;
   min-height: 90vh;
