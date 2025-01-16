@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #212529;
+  /* align-items: center; */
+  padding: 1rem;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+}
+header h1 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+.desktop {
+  display: none;
+}
+.container {
+  background-image: url(/assets/img/bg-masthead.jpg);
+  background-size: cover;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center top;
+  font-size: 2.3rem;
+  padding: 1rem;
+  /* line-height: 1.3; */
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /* padding: 2rem; */
+}
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+/* input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+} */
+input,
+.container-flex button {
+  width: 100%;
+  font-size: 1rem;
+  max-width: 300px;
+}
+/* .container-flex button{
+    padding: 5px 10px;
+} */
+button,
+input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+}
+.other-flex{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.other-flex h1{
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+}
+.other-flex i{
+    color: blue;
+    font-size: 2.8rem;
+}
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2px 6px;
+  }
+  .container-flex {
+    flex-direction: row;
+  }
+  .container {
+    height: 90vh;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  .other-flex{
+    flex-direction: row;
+  }
+}
